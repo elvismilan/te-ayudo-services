@@ -1,12 +1,14 @@
 
 import { Header } from './components/organisms/Header';
+import Footer from './components/organisms/Footer';
 import './App.css';
 
 function App() {
   return (
-    <div className="w-full overflow-hidden">
+    <>
       <Header />
-    </div>
+      <Footer />
+    </>
   );
 }
 

@@ -1,11 +1,13 @@
-import React from 'react'
-import Logo from '../atoms/Logo'
-import styles from '../../style';
+import Logo from '../atoms/Logo';
+import Navbar from './Navbar';
 
-export const Header = () => {
-  return (
-    <header className={`${styles.boxWidth} ${styles.flexCenter} ${styles.paddingY}`}>
+export const Header = () => (
+  <header className="flexCenter shadowHeader py-4 sm:py-6">
+    <div className="container flexCenter">
       <Logo />
-    </header>
-  )
-}
+      <Navbar />
+    </div>
+  </header>
+);
+
+export default Header
